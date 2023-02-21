@@ -5,7 +5,6 @@ import (
 	"log"
 	"os"
 	"bufio"
-
 	"github.com/PullRequestInc/go-gpt3"
 	"github.com/joho/godotenv"
 )
@@ -18,6 +17,7 @@ func main() {
 		log.Fatalln("Missing API KEY")
 	}
 var question string;
+for{
 fmt.Println("Enter your question");
 scanner := bufio.NewScanner(os.Stdin)
 
@@ -40,5 +40,5 @@ if scanner.Scan() {
 	if err != nil {
 		log.Fatalln(err)
 	}
-	fmt.Println(resp.Choices[0].Text)
+	fmt.Println(resp.Choices[0].Text)}
 }

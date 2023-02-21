@@ -1,2 +1,2 @@
-# chatgpt-on-golang
-Integrating ChatGPT on GoLang
+# GPT Question Answers bot on Golang
+

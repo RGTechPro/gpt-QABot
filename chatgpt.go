@@ -24,6 +24,9 @@ scanner := bufio.NewScanner(os.Stdin)
 if scanner.Scan() {
 	question = scanner.Text()
 }
+if(question=="stop"){
+	break
+}
 	ctx := context.Background()
 	client := gpt3.NewClient(apiKey)
 	
